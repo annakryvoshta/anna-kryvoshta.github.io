@@ -5,3 +5,9 @@
     margin: 0; /* Зовнішні відступи */
     padding: 0; /* Внутрішні відступи */
 }
+ul{
+    list-style: none;
+}
+a {
+text-decoration: none;
+}

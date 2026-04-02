@@ -1,5 +1,5 @@
 :root {
-    --txt-color-01: #555;           /*Колір основного тексту*/
+    --txt-color-01: #FF11A4;         /*Колір основного тексту*/
     --txt-color-02: #ccc;           /*Колір тексту інверсія*/
     --header-color: #333;           /*Колір заголовків*/
     --lnk-color-01: #930;           /*Колір покликань*/
@@ -7,12 +7,13 @@
     --bg-primary-color: #ccc;       /*Колір основного фону*/
     --bg-second-color: #555;        /*Колір фону номер 2*/
     --mob-padding: 20px;              /*Вiдступи до контенту на смартфонах*/
-    --tab-padding: 50px;              /*Відступи до контенту на Tablet*/
-    --max-width: 1380px;              /*Обмеження ширини*/            
+    --max-width: 1440px;              /*Обмеження ширини*/  
+    --container-width: 1280px;  
+    --tab-padding: 5px;
 }
 
 html, body {
-    font-family: "Monserrat", sans-serif;
+    font-family: "Fira Sans", sans-serif;;
     font-optical-sizing: auto;
     font-weight: 400;
     font-size: 16px;                  /*Розмір основного тексту*/
@@ -25,20 +26,23 @@ em, i, .italic {
     font-style: italic;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 500;
-    font-style: normal;
+h1, h2, h3, h4, h5, h6, a {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  color: var(--txt-color-01);
+  font-style: normal;
+  text-transform:uppercase ;
 }
 
-h1 {font-size: 2rem;}
+h1 {font-size: 4rem;}
 h2 {font-size: 1.5rem;}
 h3 {font-size: 1.35rem;}
 
-header > .inside, 
+header > .header_container,
+.wrapper > .wrapper_container, 
 footer > .inside, 
 section > .inside {
-    max-width: var(--max-width);
+    max-width: var(--container-width);
     margin-left: auto;
     margin-right: auto;
     padding-left: var(--tab-padding);

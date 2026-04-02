@@ -1,13 +1,34 @@
-header .row {
-    border: 1px solid red;
-    display: flex;
-    justify-content: space-between          /*Вирівнювання по основній осі (main axis)*/;
-    align-items: center;                    /*Вирівнювання рядів по ортагональній осі (cross axis)*/
-    align-content: center;                  /*Вирівнювання усього контенту по ортагональній осі (cross axis)*/
-    flex-direction: column;                 /*Визначення напрямку осей*/
-    min-height: 100dvh;                     /*dvh - Dynamic Viewport Height*/
+header {
+    align-content: center;
+    height: 100px;
+    background-color: #FBC7EA;
+    position:sticky;
+    top: 0;
+
 }
-header .col {
-    background-color: #ccc;
+
+.header_container {
+    display: flex;
+    gap: 22px;
+    justify-content: left;
+    align-items: center;
+}
+.header_left a{
+display: flex;
+padding: 0px 45px;
+background-color: #FF11A4;
+color: #FFFF;
+font-size: 50px;
+border-radius: 15px;
+}
+.header_nav {
+
+}
+.nav_list {
+display: flex;
+gap: 30px;
+font-size: 40px;
+}
+.nav_list a {
 
 }
