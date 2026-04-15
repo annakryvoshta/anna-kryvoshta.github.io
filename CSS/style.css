@@ -10,3 +10,8 @@
 .hero_title {
 
 }
+.info_section h2 {
+    text-align: right;
+    width: 100%;
+    display: block 
+}
