@@ -9,6 +9,7 @@ header {
 
 .header_container {
     display: flex;
+    padding: 0px 10px ;
     gap: 22px;
     justify-content: left;
     align-items: center;

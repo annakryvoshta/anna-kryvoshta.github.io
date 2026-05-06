@@ -8,7 +8,8 @@
     --bg-second-color: #555;        /*Колір фону номер 2*/
     --mob-padding: 20px;              /*Вiдступи до контенту на смартфонах*/
     --max-width: 1440px;              /*Обмеження ширини*/  
-    --container-width: 1280px;  
+    --container-width: 1065px;  
+    --wide-container-width: 1280px; 
     --tab-padding: 5px;
 }
 
@@ -38,11 +39,26 @@ h1 {font-size: 4rem;}
 h2 {font-size: 4rem;}
 h3 {font-size: 1.35rem;}
 
-header > .header_container,
 .wrapper > .wrapper_container, 
 footer > .inside, 
 section > .inside {
     max-width: var(--container-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--tab-padding);
+    padding-right: var(--tab-padding);
+}
+@media (max-width: 640px) {
+    header > .inside, 
+    footer > .inside, 
+    section > .inside {
+        padding-left: var(--mob-padding);
+        padding-right: var(--mob-padding);
+    }
+}
+
+header > .header_container {
+    max-width: var(--wide-container-width);
     margin-left: auto;
     margin-right: auto;
     padding-left: var(--tab-padding);

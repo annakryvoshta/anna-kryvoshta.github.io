@@ -8,10 +8,59 @@
 
 }
 .hero_title {
+    
+}
+.simp_cards {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 40px;
+    align-items: start;
+    justify-items: center;
+}
 
+.simp_card {
+    margin: 0;
+    text-align: center;
+    max-width: 320px;
+}
+
+.simp_card-img {
+    width: min(220px, 100%);
+    aspect-ratio: 1 / 1;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto 18px;
+    object-fit: cover;
+}
+
+.simp_card-title {
+    font-size: 2.75rem;
+    margin: 0;
+    line-height: 1;
+}
+
+.simp_card-text {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+@media (max-width: 900px) {
+    .simp_cards {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
 }
 .info_section h2 {
     text-align: right;
     width: 100%;
     display: block 
+}
+.info_section {
+    margin-top: 80px;
+}
+
+.info_section p {
+    font-size: 1.25rem;
 }
