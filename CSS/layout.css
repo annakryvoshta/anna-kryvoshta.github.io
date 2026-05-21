@@ -57,6 +57,10 @@ section > .inside {
     }
 }
 
+.inside.wide {
+    max-width: var(--wide-container-width);
+}
+
 header > .header_container {
     max-width: var(--wide-container-width);
     margin-left: auto;
@@ -72,4 +76,5 @@ header > .header_container {
         padding-right: var(--mob-padding);
     }
 }
+
 
